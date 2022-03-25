@@ -42,8 +42,8 @@ body {
   border-radius: 0.75rem;
   max-width: 400px;
   min-width: 250px;
-  height: 370px;
-  max-height: 370px;
+  /* height: 370px; */
+  /* max-height: 370px; */
   padding: 2rem;
 }
 
