@@ -1,49 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Rating state start -->
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Rating state start -->
 
-  How did we do?
+    <article>
+      <section class="card">
+        <header class="card__header">
+          <img src="images/icon-star.svg" alt="star icon" class="card__icon" />
+        </header>
+        <main>
+          <h1 class="card__title">How did we do?</h1>
+          <p class="card__subtitle">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+          <form id="form">
+            <section class="options">
+              <div class="option">
+                <input type="radio" name="opcion" value="1" id="1" />
+                <label for="1">1</label>
+              </div>
+              <div class="option">
+                <input type="radio" name="opcion" value="2" id="2" />
+                <label for="2">2</label>
+              </div>
+              <div class="option">
+                <input type="radio" name="opcion" value="3" id="3" />
+                <label for="3">3</label>
+              </div>
+              <div class="option">
+                <input type="radio" name="opcion" value="4" id="4" />
+                <label for="4">4</label>
+              </div>
+              <div class="option">
+                <input type="radio" name="opcion" value="5" id="5" />
+                <label for="5">5</label>
+              </div>
+            </section>
+            <button class="options__submit">submit</button>
+          </form>
+        </main>
+      </section>
+      <section class="card card--d-none">
+        <header class="card__header card__header--op2">
+          <img src="./images/illustration-thank-you.svg" alt="Thank You" />
+          <p class="card__selected">
+            You selected <span id="value"></span> out of 5
+          </p>
+        </header>
+        <main>
+          <h1 class="card__title card__title--center card__title--no-mt">
+            Thank you!
+          </h1>
+          <p class="card__subtitle card__subtitle--center">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </main>
+      </section>
+    </article>
 
-  1 2 3 4 5
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/EdgardAlas/">Edgard Alas</a>.
+    </div>
 
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <script src="./js/js.js"></script>
+  </body>
 </html>
